@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson 6: forms and user input">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <h2>Contact us</h2>
+    <!-- method="get": press Send, then look at the address bar to see the name=value pairs -->
+    <form action="" method="get">
+        <p>
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+        </p>
+        <p>
+            <label for="visit">Preferred date</label>
+            <input type="date" id="visit" name="visit">
+        </p>
+        <fieldset>
+            <legend>Preferred contact</legend>
+            <label><input type="radio" name="contact" value="email" checked> Email</label>
+            <label><input type="radio" name="contact" value="phone"> Phone</label>
+        </fieldset>
+        <p>
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+            </select>
+        </p>
+        <p>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="4" cols="40"></textarea>
+        </p>
+        <p>
+            <label><input type="checkbox" name="newsletter" value="yes"> Send me the newsletter</label>
+        </p>
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- Your turn: an AI tool wrote the form below. It has 5 problems. Find and fix them. -->
+    <h2>Join our newsletter</h2>
+    <form action="" method="get">
+        <input type="text" placeholder="Your name">
+        <label for="mail">Email</label>
+        <input type="text" id="email" name="email">
+        <label><input type="checkbox"> Send me news</label>
+        <div class="btn" onclick="send()">Send</div>
+    </form>
+</body>
+</html>

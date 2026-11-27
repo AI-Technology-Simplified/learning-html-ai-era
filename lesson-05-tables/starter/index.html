@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <!-- A little CSS so you can see the cell borders. CSS comes later in the course. -->
+    <style>
+        table { border-collapse: collapse; margin-bottom: 2rem; }
+        th, td { border: 1px solid #333; padding: 0.5rem 1rem; }
+    </style>
+</head>
+<body>
+    <h1>Tables</h1>
+
+    <!-- A standard table -->
+    <table>
+        <caption>Web Languages</caption>
+        <thead>
+            <tr><th>Language</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>HTML</td><td>Structure</td></tr>
+            <tr><td>CSS</td><td>Style</td></tr>
+            <tr><td>JavaScript</td><td>Behaviour</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Your turn: before opening this file in a browser, sketch the table below. -->
+    <!-- Then add a comment under each row that uses colspan or rowspan, explaining what it does. -->
+    <table>
+        <caption>Course Timetable</caption>
+        <tr><th>Time</th><th>Monday</th><th>Tuesday</th></tr>
+        <tr><td>09:00</td><td>HTML</td><td>CSS</td></tr>
+        <tr><td>10:00</td><td colspan="2">Break</td></tr>
+        <tr><td>11:00</td><td rowspan="2">Tables</td><td>Forms</td></tr>
+        <tr><td>12:00</td><td>Review</td></tr>
+    </table>
+</body>
+</html>

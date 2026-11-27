@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson 4: everyday HTML content">
+    <title>Everyday Content</title>
+</head>
+<body>
+    <h1>Everyday Content</h1>
+
+    <!-- Headings: h1 to h6, used in order. One h1 per page. -->
+
+    <h2>Text</h2>
+    <p>A paragraph of text.</p>
+    <p>This is <strong>important</strong>, and this is <em>emphasised</em>.</p>
+    <p>Line one<br>Line two</p>
+    <!-- strong = importance, em = emphasis, br = line break (an empty element) -->
+
+    <h2>Lists</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+    <ol>
+        <li>Plan</li>
+        <li>Build</li>
+        <li>Review</li>
+    </ol>
+    <!-- ul = bullet list, ol = numbered list, li = each item (always inside ul or ol) -->
+
+    <h2>Links</h2>
+    <p><a href="menu.html">A relative link to another page on this site</a></p>
+    <p><a href="https://html.spec.whatwg.org">An absolute link to another website</a></p>
+    <p><a href="https://html.spec.whatwg.org" target="_blank">A link that opens in a new tab</a></p>
+    <p><a href="mailto:hello@example.com">An email link</a></p>
+    <!-- Relative links stay on this site; absolute links include the full address -->
+
+    <h2>Images</h2>
+    <img src="logo.png" alt="My Site logo" width="360" height="100">
+    <img src="missing.png" alt="Photo of our office">
+    <!-- The second image file does not exist, so the browser shows its alt text instead -->
+
+    <h2>Special Characters</h2>
+    <p>&copy; 2026 My Coding Blog</p>
+    <p>Fish &amp; chips</p>
+    <p>Use &lt;p&gt; for paragraphs</p>
+    <p>10&nbsp;km</p>
+    <!-- Entities: &copy; &amp; &lt; &gt; &nbsp; (a space that never breaks across lines) -->
+
+    <h2>div and span</h2>
+    <div class="card">
+        <h3>A div is a block</h3>
+        <p>It starts on a new line and takes the full width.</p>
+    </div>
+    <p>A span sits <span class="highlight">inside a line</span> of text.</p>
+    <!-- div (block) and span (inline) have no meaning of their own: use them for styling and layout -->
+
+    <h2>Media</h2>
+    <video src="intro.mp4" controls width="320"></video>
+    <audio src="podcast.mp3" controls></audio>
+    <iframe src="embed.html" title="Embedded page"></iframe>
+    <!-- controls adds play, pause and volume. An iframe shows another page inside this one. -->
+
+    <!-- Your turn: an AI tool wrote the section below. It has 4 mistakes. Find and fix them. -->
+    <section>
+        <h2>Our Menu</h2>
+        <h3>Starters</h3>
+        <!-- Fix 1: h3, not h4. Heading levels should not skip. -->
+        <ul>
+            <li>Soup of the day</li>
+            <li>Garlic bread</li>
+        </ul>
+        <!-- Fix 2: li elements must sit inside a ul or ol. -->
+        <img src="soup.jpg" alt="A bowl of tomato soup" width="320" height="200">
+        <!-- Fix 3: every img needs alt text. -->
+        <p><a href="menu.html">See the full menu</a></p>
+        <!-- Fix 4: link text should say where the link goes, not "Click here". -->
+    </section>
+</body>
+</html>
